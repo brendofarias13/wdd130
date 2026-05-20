@@ -31,12 +31,6 @@ code {
     background-color: #ddd; /* essa é a abreviação para #dddddd */
 }
 
-.highlight {
-    background-color: #efefaa;
-    border-radius: 25px;
-    padding: 25px;
-}
-
 /* ID exemplos - devem ser únicos */
 
 #note {
