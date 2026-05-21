@@ -1,74 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
-    --cor-primaria: #003366;
+    --cor-primaria: #4d7ea8;
     --cor-secundaria: #333;
     --cor-texto-claro: white;
     --cor-sombra: gray;
     --fonte-principal: Arial, Helvetica, sans-serif;
     --espacamento-pequeno: 10px;
     --espacamento-medio: 20px;
-    --largura-main: 800px;
-    --largura-aside: 400px;
-    --borda-padrao: 1px solid #333;
+    --largura-main: 900px;
+    --largura-aside: 380px;
+    --borda-padrao: 1px solid #999;
 }
 
 body {
     font-family: var(--fonte-principal);
-    margin: 0;
-    padding: 0;
+    line-height: 1.5;
 }
 
 nav {
-    background-color: var(--cor-secundaria);
-    padding: var(--espacamento-pequeno);
+    background-color: var(--cor-primaria);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 nav a {
-    color: var(--cor-texto-claro);
-    padding: var(--espacamento-pequeno);
-    display: block;
+    color: white;
     text-decoration: none;
-    margin-right: 15px;
-}
-
-h1 {
-    color: var(--cor-primaria);
+    font-size: 14px;
+    font-weight: bold;
 }
 
 main {
     max-width: var(--largura-main);
     margin: 0 auto;
-    padding: var(--espacamento-medio);
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--cor-primaria);
+    margin-bottom: 10px;
 }
 
 main img {
-    width: 150px;
+    width: 140px;
     height: auto;
-    border: 1px solid black;
+    float: right;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #999;
     padding: 2px;
-    box-shadow: 0 0 30px var(--cor-sombra);
+    box-shadow: 0 0 15px gray;
 }
 
-p {
-    padding: 0;
+main p {
+    margin-bottom: 1rem;
 }
 
 aside {
+    position: relative;
     width: var(--largura-aside);
-    margin: var(--espacamento-medio) auto;
-    border: var(--borda-padrao);
-    padding: var(--espacamento-medio);
-    background-color: var(--cor-primaria);
-    color: var(--cor-texto-claro);
+    margin: 1rem auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
 footer {
-    margin-top: var(--espacamento-medio);
-    border-top: var(--borda-padrao);
+    margin-top: 2rem;
+    border-top: 1px solid #999;
     text-align: center;
-    padding: var(--espacamento-pequeno);
+    padding: 1rem;
+}
+
+/* Seletores de Classe */
+
+.caixa {
+    margin-top: 1rem;
+    border: var(--borda-padrao);
+    padding: 1rem;
+    background-color: #eeeeee;
 }
