@@ -6,7 +6,6 @@
 
 :root {
     --cor-primaria: #1d3557;
-    --cor-secundaria: #457b9d;
     --cor-destaque1: #222;
     --cor-fundo: #f1f1f1;
 
@@ -29,9 +28,14 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 180px 1fr;
     align-items: center;
     padding: 1rem 0;
+}
+
+header img {
+    width: 150px;
+    height: auto;
 }
 
 nav {
@@ -76,14 +80,16 @@ article {
     top: 20px;
     width: 100%;
     padding: 16px;
+
     text-align: center;
-    opacity: 0.8;
+
     background-color: rgba(29, 53, 87, 0.8);
     color: white;
 }
 
 .hero article {
     position: absolute;
+
     bottom: 20px;
     left: 20px;
     right: 20px;
@@ -93,16 +99,25 @@ article {
 
 .hero article img {
     float: right;
-    width: 125px;
+
+    width: 160px;
+    height: auto;
+
     margin-left: 15px;
+
     border-radius: 8px;
 }
 
-.redes-sociais a {
+section {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.socialmedia a {
     text-decoration: none;
 }
 
-.redes-sociais img {
+.socialmedia img {
     width: 40px;
     height: 40px;
     object-fit: contain;
@@ -114,6 +129,8 @@ footer {
     align-items: center;
 
     margin-top: 1rem;
+
     border-top: 1px solid #ccc;
+
     padding: 1rem 0;
 }
