@@ -22,29 +22,49 @@ body {
     line-height: 1.5;
 }
 
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
-    background-color: var(--cor-primaria);
+    background-color: steelblue;
     padding: 1rem;
     display: flex;
-    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
-    color: white;
+    display: block;
+    padding: 0.5rem;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 main {
-    max-width: var(--largura-main);
-    margin: 0 auto;
-    padding: 1rem;
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 h1 {
     color: var(--cor-primaria);
     margin-bottom: 10px;
+    border-bottom: 2px solid #000;
 }
 
 main img {
@@ -60,12 +80,6 @@ main img {
 
 main p {
     margin-bottom: 1rem;
-}
-
-aside {
-    position: relative;
-    width: var(--largura-aside);
-    margin: 1rem auto;
 }
 
 aside h2 {
