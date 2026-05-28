@@ -47,6 +47,7 @@ nav a {
 .grid {
     display: grid;
     align-items: center;
+    gap: 1rem;
 }
 
 main {
