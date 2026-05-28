@@ -24,7 +24,7 @@ body {
 header,
 main,
 footer {
-    width: 840px;
+    max-width: 840px;
     margin: 0 auto;
 }
 
@@ -92,7 +92,6 @@ article {
     bottom: 20px;
     left: 20px;
     right: 20px;
-
     background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -109,11 +108,49 @@ section {
     border-radius: 8px;
 }
 
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.adventures {
+    text-align: center;
+}
+
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.adventure-gallery figure {
+    width: 150px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
 footer {
     margin-top: 20px;
     padding: 20px;
     border-top: 1px solid #ccc;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
