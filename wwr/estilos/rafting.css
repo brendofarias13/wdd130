@@ -7,7 +7,7 @@
 :root {
     --cor-primaria: #1d3557;
     --cor-secundaria: #457b9d;
-    --cor-destaque1: #222;
+    --cor-destaque1: #222222;
     --cor-fundo: #f1f1f1;
     --cor-clara: #ffffff;
 
@@ -34,6 +34,7 @@ header {
     align-items: center;
     background-color: var(--cor-secundaria);
     padding: 16px;
+    color: var(--cor-clara);
 }
 
 header img {
@@ -43,6 +44,9 @@ header img {
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin: 16px;
+    padding: 8px;
 }
 
 nav a {
@@ -52,23 +56,16 @@ nav a {
     padding: 10px;
 }
 
+nav a:hover {
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+}
+
 h1,
 h2 {
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
-}
-
-header h1,
-header h2,
-header p,
-header span {
-    color: var(--cor-clara);
-}
-
-nav {
-    margin: 16px;
-    padding: 8px;
 }
 
 section,
@@ -98,7 +95,7 @@ p {
     padding: 16px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: var(--cor-clara);
 }
 
 .hero article {
@@ -106,6 +103,7 @@ p {
     bottom: 20px;
     left: 20px;
     right: 20px;
+    padding: 20px;
     background-color: rgba(255, 255, 255, 0.85);
 }
 
@@ -117,7 +115,7 @@ p {
 }
 
 section {
-    background-color: white;
+    background-color: var(--cor-clara);
     margin-top: 20px;
     border-radius: 8px;
 }
@@ -127,6 +125,10 @@ section {
     grid-template-columns: 1fr 220px 1fr;
     gap: 20px;
     align-items: center;
+}
+
+.history-content p {
+    text-align: justify;
 }
 
 .history-content img {
@@ -146,6 +148,9 @@ section {
 
 .adventure-gallery figure {
     width: 150px;
+    border: 1px solid #cccccc;
+    padding: 5px;
+    background-color: var(--cor-clara);
 }
 
 .adventure-gallery img {
@@ -164,9 +169,14 @@ figcaption {
 footer {
     margin-top: 20px;
     padding: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #cccccc;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.socialmedia {
+    display: flex;
     align-items: center;
 }
 
