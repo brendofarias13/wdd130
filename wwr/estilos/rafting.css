@@ -59,12 +59,26 @@ h2 {
     text-align: center;
 }
 
-nav,
-p,
+header h1,
+header h2,
+header p,
+header span {
+    color: var(--cor-clara);
+}
+
+nav {
+    margin: 16px;
+    padding: 8px;
+}
+
 section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+p {
+    margin: 8px 0;
 }
 
 .hero {
