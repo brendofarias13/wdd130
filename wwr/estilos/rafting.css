@@ -175,16 +175,16 @@ footer {
     align-items: center;
 }
 
-.socialmedia {
+.redes-sociais {
     display: flex;
     align-items: center;
 }
 
-.socialmedia a {
+.redes-sociais a {
     text-decoration: none;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 40px;
     height: 40px;
     object-fit: contain;

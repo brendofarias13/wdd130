@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -60,29 +61,20 @@
 
                     <p><strong>Propósito da Mensagem</strong></p>
 
-                    <label>
-                        <input type="radio" name="purpose" value="consulta" required>
-                        Consulta Geral
-                    </label>
+                    <input type="radio" id="general" name="purpose" value="consulta" required>
+                    <label for="general">Consulta Geral</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="reserva">
-                        Pergunta sobre Reserva
-                    </label>
+                    <input type="radio" id="reservation" name="purpose" value="reserva">
+                    <label for="reservation">Pergunta sobre Reserva</label>
 
-                    <label>
-                        <input type="radio" name="purpose" value="sugestao">
-                        Sugestão de Site
-                    </label>
+                    <input type="radio" id="suggestion" name="purpose" value="sugestao">
+                    <label for="suggestion">Sugestão de Site</label>
 
                     <label for="message">Mensagem</label>
-
                     <textarea id="message" name="message" rows="6"></textarea>
 
-                    <label>
-                        <input type="checkbox" name="newsletter">
-                        Quero receber a newsletter mensal
-                    </label>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Quero receber a newsletter mensal</label>
 
                     <button type="submit">Enviar Mensagem</button>
 
@@ -132,7 +124,7 @@
 
         <p>©2026 White Water Rafting Adventures ❖ Brendo da Silva Farias</p>
 
-        <nav class="socialmedia">
+        <nav class="redes-sociais">
 
             <a href="https://facebook.com">
                 <img src="imagens/facebook.png" alt="Facebook">
@@ -153,3 +145,4 @@
 </body>
 
 </html>
+```
