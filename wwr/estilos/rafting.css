@@ -240,7 +240,7 @@ footer {
     resize: vertical;
 }
 
-.contact-form button {
+.contact-form input[type="submit"] {
     background-color: var(--cor-primaria);
     color: var(--cor-clara);
     border: none;
@@ -250,7 +250,7 @@ footer {
     border-radius: 4px;
 }
 
-.contact-form button:hover {
+.contact-form input[type="submit"]:hover {
     background-color: var(--cor-secundaria);
 }
 
@@ -284,4 +284,12 @@ footer {
     margin-top: 10px;
     font-weight: bold;
 }
-    
+
+iframe {
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
